@@ -1,0 +1,60 @@
+<!--
+Author: Zolmeister
+Copyright: 2012
+-->
+<html>
+	<body>
+		<style>
+			#sourceOut {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				overflow: hidden;
+				height: 740px;
+				width: 400px;
+				color: green;
+				weight: bold;
+				font-family: monospace;
+				opacity: .3;
+			}
+			#tuxman{
+				position:absolute;
+				top:0px;
+				left:0px;
+			}
+			#dead{
+				background: #0001AB url(bsod.jpg) no-repeat;
+			}
+			#resetButton{
+				position:absolute;
+				top:5px;
+				left: 10px;
+				height:15px;
+				font-size:8px;
+				z-index: 99;
+				display:none;
+			}
+			#soundButton{
+				position:absolute;
+				top:5px;
+				left: 50px;	
+				height:15px;
+				font-size:8px;
+				z-index: 99;
+				display:none;
+			}
+		</style>
+		<button id='resetButton'>reset</button><button id='soundButton'>sound: off</button>
+		<div id='sourceOut' style=''></div>
+		<canvas id='tuxman' style=""></canvas>
+		<script src='mousetrap.min.js'></script>
+		<script src='Box2dWeb-2.1.a.3.min.js'></script>
+		<script src='main.js'></script>
+	</body>
+</html>
